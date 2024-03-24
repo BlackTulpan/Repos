@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Slider</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      color: #000;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    .testimonial {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5rem;
+    }
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    .line {
+      height: 2px;
+      width: 6rem;
+      background-color: #e26c4f;
+      margin-bottom: calc(3rem + 2vmin);
+    }
+
+    .arrow-wrapper {
+      position: relative;
+      width: 70%;
+      border-radius: 2rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      overflow: hidden;
+      place-items: center;
+    }
+
+    .review-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: calc(2rem + 1vmin);
+      width: 100%;
+    }
+
+    #imgBox {
+      border-radius: 50%;
+      width: calc(6rem + 4vmin);
+      height: calc(6rem + 4vmin);
+      position: relative;
+      box-shadow: 5px -3px #e26c4f;
+      background-size: cover;
+      margin-bottom: calc(0.7rem + 0.5vmin);
+    }
+
+    #name {
+      margin-bottom: calc(0.7rem + 0.5vmin);
+      font-size: calc(1rem + 0.5vmin);
+      letter-spacing: calc(0.1rem + 0.1vmin);
+      font-weight: bold;
+    }
+
+    #profession {
+      font-size: calc(0.8rem + 0.3vmin);
+      margin-bottom: calc(0.7rem + 0.5vmin);
+      color: #e26c4f;
+    }
+
+    #description {
+      font-size: calc(0.8rem + 0.3vmin);
+      width: 70%;
+      max-width: 40rem;
+      text-align: center;
+      margin-bottom: calc(1.4rem + 1vmin);
+      color: rgb(92, 92, 92);
+      line-height: 2rem;
+    }
+
+    .arrow {
+      width: calc(1.4rem + 0.6vmin);
+      height: calc(1.4rem + 0.6vmin);
+      border: solid #e26c4f;
+      border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .arrow:hover {
+      transition: 0.3s;
+      transform: scale(1.15);
+    }
+
+    .left-arrow-wrap {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: rotate(135deg);
+    }
+
+    .right-arrow-wrap {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: rotate(-45deg);
+    }
+
+    @media screen and (max-width: 900px) {
+      .testimonial {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+  }
+   
+
+    </style>
+    <div class="container">
+      <aside class="left">
+       
+    <ul>
+        <li><a  href="file:///C:/Users/%D0%A8%D0%A6%D0%A2/Desktop/%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C/index.html">Профиль</a></li>
+        <li><a href="file:///C:/Users/%D0%A8%D0%A6%D0%A2/Desktop/%D0%B1%D1%83%D0%B4/index.html">Главная</a></li>
+        <li><a class="active"href="file:///D:/Desktop/dewkm/index.html">Рекомендуемые друзья</a></li>
+        <li><a href="file:///C:/Users/%D0%A8%D0%A6%D0%A2/Desktop/%D0%93%D0%BB/index.html">Будущие функции</a></li>
+        <li><a href="https://yandex.ru/images/search?img_url=https%3A%2F%2Fwebpulse.imgsmail.ru%2Fimgpreview%3Fmb%3Dwebpulse%26key%3Dpulse_cabinet-image-28a873ad-f0e2-47f9-b82d-3a39f6fecfbf&lr=213&pos=0&rpt=simage&text=%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%8C%20%D0%BD%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D0%B5">нажми сюда - ©Сталин </a> </li>
+      </ul>
+      
+
+    </aside>
+  </div>
+
+  <div class="testimonial">
+    <h1>возможно вы знакомы</h1>
+    <div class="line"></div>
+   
+
+ 
+ </head>
+ <body> 
+  <a href="file:///C:/Users/%D0%A8%D0%A6%D0%A2/Desktop/piukuu/index.html" class="btn btn-primary">Добавить их всех в друзья</a>
+
+    <div class="arrow-wrapper">
+     
+
+
+
+    
+      <div id="reviewWrap" class="review-wrap">
+        <div id="imgBox"></div>
+        <div id="name"></div>
+        <div id="profession"></div>
+        <div id="description"></div>
+      </div>
+      
+      <div class="left-arrow-wrap">
+        <div class="arrow"></div>
+      </div>
+    
+      <div class="right-arrow-wrap">
+        <div class="arrow"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const reviewWrap = document.getElementById("reviewWrap");
+    const leftArrow = document.querySelector(".left-arrow-wrap .arrow");
+    const rightArrow = document.querySelector(".right-arrow-wrap .arrow");
+    const imgBox = document.getElementById("imgBox");
+    const name = document.getElementById("name");
+    const profession = document.getElementById("profession");
+    const description = document.getElementById("description");
+
+    let people = [{
+     
+        photo: 'url("https://avatars.dzeninfra.ru/get-zen_doc/1222645/pub_5d1f8dcbd5299900add2a546_5d1f8e3d07f8ec00ae8a448c/scale_1200")',
+        name: "Адольв",
+        profession: "🖌️🎨卐 ",
+        description: "станьте польшей и фюрер к вам потянется "
+
+      },
+      {
+        photo: 'url("https://img.razrisyika.ru/kart/29/1200/113812-mister-bist-7.jpg")',
+        name: "Mr.Beast",
+        profession: "Блогер",
+        description: "Я сброшу на вас 250 тысяч тонн тротила"
+
+      },
+
+      {
+        photo: 'url("https://s.hdnux.com/photos/43/37/21/9303141/8/rawImage.jpg")',
+        name: "纠母幼",
+            profession: "曲团吕同吊吃因吸 ",
+        description: "皮边孕发圣对台 矛纠母幼丝邦 式迂刑戎动扛寺吉扣考托老巩圾执 扩扫地场扬耳芋共 芒亚芝朽朴机权过臣吏再协西压厌戌在百有存而页匠夸夺灰达列死成夹夷 轨邪尧划迈毕至此 贞师尘尖劣光当早吁吐吓虫曲团吕同吊吃因吸吗吆屿屹岁帆回岂则刚"
+      },
+      
+       {  photo: 'url("https://rutensil.ru/uploads/kj8DXcMNKxKdXLWAA8ZX5gRzo953pjvh.jpeg")',
+        name: "user7809",
+         profession: " ",
+        description: " " 
+        
+      },
+
+    ];
+    
+
+    imgBox.style.backgroundImage = people[0].photo;
+    name.innerText = people[0].name;
+    profession.innerText = people[0].profession;
+    description.innerText = people[0].description;
+    let currentPerson = 0;
+
+ 
+    function slide(side, personNumber) {
+      let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+      let descriptionHeight = description.offsetHeight + "px";
+      //(+ or -)
+      let side1symbol = side === "left" ? "" : "-";
+      let side2symbol = side === "left" ? "-" : "";
+
+      setTimeout(() => {
+        imgBox.style.backgroundImage = people[personNumber].photo;
+      }, 0);
+      setTimeout(() => {
+        description.style.height = descriptionHeight;
+      }, 100);
+      setTimeout(() => {
+        name.innerText = people[personNumber].name;
+      }, 200);
+      setTimeout(() => {
+        profession.innerText = people[personNumber].profession;
+      }, 300);
+      setTimeout(() => {
+        description.innerText = people[personNumber].description;
+      }, 400);
+    }
+
+    function setNextCardLeft() {
+      if (currentPerson === 3) {
+        currentPerson = 0;
+        slide("left", currentPerson);
+      } else {
+        currentPerson++;
+      }
+
+      slide("left", currentPerson);
+    }
+
+    function setNextCardRight() {
+      if (currentPerson === 0) {
+        currentPerson = 3;
+        slide("right", currentPerson);
+      } else {
+        currentPerson--;
+      }
+
+      slide("right", currentPerson);
+    }
+
+    leftArrow.addEventListener("click", setNextCardLeft);
+    rightArrow.addEventListener("click", setNextCardRight);
+
+  </script>
+
+
+    
+</body>
+
+</html>
